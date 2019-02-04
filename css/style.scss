@@ -31,7 +31,6 @@ img {
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-
   background: #222;
 }
 
@@ -59,7 +58,7 @@ body {
 
   .hero__welcome {
     text-align: center;
-    font-size: 44px;
+    font-size: 50px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
@@ -83,7 +82,7 @@ body {
   }
 
     .section__title {
-      font-weight: 200;
+      font-weight: 300;
       line-height: 1.4;
       font-size: 50px;
       letter-spacing: 0.02em;
@@ -94,10 +93,70 @@ body {
       font-weight: 300;
       line-height: 2;
       font-size: 22px;
-      color: #666666;
+      color: #959595;
     }
 
   .section__image {
-    max-width: 600px;
+    max-width: 640px;
   }
+
+.team-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  height: 840px;
+}
+
+.team-card { 
+  position: relative;
+  width: 280px; 
+  height: 410px;
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.15);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 20px;
+  margin: 10px;
+}
+
+.team-card:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4));
+}
+
+  .team-card__name {
+    z-index: 10;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .team-card__tag {
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 5px 10px;
+  }
+
+
+
 
