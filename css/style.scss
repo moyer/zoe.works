@@ -240,13 +240,41 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #959595;
+    display: block;
+    margin-bottom: 5px;
   }
 
   .field {
     display: block;
     background-color: #F5F5F5;
     border: none;
-    height: 60px;
     width: 100%;
     margin-bottom: 30px;
+    outline: none;
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: 300;
+    padding: 20px;
+    font-family: inherit;
+  }
+
+  input.field {
+    height: 60px;
+  }
+
+  textarea.field {
+    resize: none;
+    overflow: auto;
+  }
+
+  .button {
+    font-family:inherit;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    letter-spacing: 0.06em;
   }
