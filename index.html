@@ -1,10 +1,73 @@
 ---
 layout: default
 ---
+<div class="nav">
+  <img class="nav__logo" src="/assets/logo.png" alt="Zoe logo">
+  <ul class="nav__menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
 
-<div class="hero">
-  <div class="hero__content">
-    <img class="hero__logo" src="/assets/logo.png" alt="Zoe logo">
-    <h1 class="hero__welcome">We turn ideas into beautiful products</h1>
+<div class="hero section">
+  <h1 class="hero__welcome">We turn ideas into beautiful products</h1>
+  <img src="/assets/hero-image.png" alt="phone image" class="hero__image">
+</div>
+
+<div class="about section" id="about">
+    <h2 class="about__title section__title">
+      We’re a group of designers and makers ready for anything.
+    </h2>
+    <p class="about__text section__text">
+      We work closely with you to understand your market and business goals, then create a team best suited to execute on your vision. From user stories to motion design, we are ready to tackle any design or development challenge needed.
+    </p>
+</div>
+
+<div class="team">
+  <div class="team__image">
+    <img src="/assets/rory-reiff.jpg" alt="Rory Reiff">
   </div>
+  <div class="team__image">
+    <img src="/assets/will-moyer.jpg" alt="Will Moyer">
+  </div>
+  <div class="team__image">
+    <img src="/assets/zoe.jpg" alt="Zoe the Dog">
+  </div>
+</div>
+
+<div class="work section">
+  <h2 class="work__title section__title">
+    We work with startups, small businesses, and Fortune 500 companies.
+  </h2>
+  <p class="work__text section__text">
+      We have years of experience working for businesses of all sizes, from small founder teams eyeing the launch of an MVP, to household names looking to push into new customer sectors (we would share names, but legal told us not to.)
+  </p>
+</div>
+
+<div class="contact section" id="contact">
+  
+  <div class="contact__content">
+    <h2 class="contact__title section__title">
+      Let's chat.
+    </h2>
+    <p class="contact__text section__text">
+      Tell us about your business or idea. We’d love to see how we can help you take your business to the next level.
+    </p>
+  </div>
+
+  <form class="contact__form" action="https://www.elformo.com/forms/c4539c10-d010-4d07-89f3-8dc1f15a3e4f" method="post" accept-charset="UTF-8">
+    <div>
+      <label for="name">Your name</label>
+      <input class="field" id="name" name="name" type="name" />
+    </div>
+    <div>
+      <label for="email">Your email address</label>
+      <input class="field" id="email" name="email" type="email" />
+    </div>
+    <div>
+      <label for="message">Tell us about your idea or project</label>
+      <textarea class="field" id="message" name="message" rows=8></textarea>
+    </div>
+    <input class="button" id="submit" name="submit" type="Submit" value="Send message"/>
+  </form>
 </div>
